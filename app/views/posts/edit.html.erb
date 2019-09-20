@@ -1,7 +1,7 @@
 <h3>Post Form</h3>
 
 <%= form_for(@post) do |f| %>
-  <label>Post title:</label><br>
+  <%= f.label 'Post Title' %><br>
   <%= text_field_tag :title, @post.title %><br>
 
   <label>Post Description</label><br>
